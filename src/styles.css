@@ -1,0 +1,17 @@
+:root {
+  --deleted-message-color: #f357571a;
+}
+
+.messageDeleted {
+  background-color: var(--deleted-message-color) !important;
+}
+
+.messageDeleted > div[id^="message-accessories-"],
+.messageDeleted span[class^="emojiContainer-"] > img {
+  filter: grayscale(1);
+}
+
+.messageDeleted:hover > div[id^="message-accessories-"],
+.messageDeleted:hover span[class^="emojiContainer-"] > img {
+  filter: grayscale(0);
+}
